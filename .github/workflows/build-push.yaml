@@ -28,7 +28,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: deploy
           platforms: linux/amd64,linux/arm64,linux/arm
           push: true
           tags: lyzhang1999/ubuntu:latest
